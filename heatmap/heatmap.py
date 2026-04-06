@@ -76,7 +76,7 @@ img = ax.imshow(heatmap.T,
                 origin='lower', cmap=cmap, 
                 norm=norm, alpha=1.0,                
                 vmin=0, vmax=vmax)
-ax.set_title('Generic Data Heatmap on US Map', fontsize=22)
+ax.set_title('Fire Index Heat Map', fontsize=22)
 ax.set_xlabel('')
 ax.set_ylabel('')
 ax.axis('off')
@@ -86,5 +86,5 @@ cbar = plt.colorbar(img, ax=ax, shrink=0.6, ticks=ticks)
 cbar.set_label(f'\n{value_label}', fontsize=15)
 cbar.ax.set_yticklabels(list(map(str, ticks)))
 
-#plt.show()
-plt.savefig('heatmap.png')
+plt.show()
+#plt.savefig('heatmap.png')
