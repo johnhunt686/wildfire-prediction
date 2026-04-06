@@ -86,4 +86,5 @@ cbar = plt.colorbar(img, ax=ax, shrink=0.6, ticks=ticks)
 cbar.set_label(f'\n{value_label}', fontsize=15)
 cbar.ax.set_yticklabels(list(map(str, ticks)))
 
-plt.show()
+#plt.show()
+plt.savefig('heatmap.png')
